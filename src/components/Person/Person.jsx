@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 export const Person = ({ person }) => {
   const { name, age, married, gender, partner } = person;
   let partnerLine = null;
@@ -17,7 +16,7 @@ export const Person = ({ person }) => {
   return (
     <div className="Person">
       <div className="Person__name">{name}</div>
-      {age !== undefined && <div className="Person__age">{age}</div>}
+      {age != null && <div className="Person__age">{age}</div>}
       <div className="Person__partner">{partnerLine}</div>
     </div>
   );
