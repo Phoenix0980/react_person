@@ -1,9 +1,13 @@
+/* eslint-disable prettier/prettier */
 export const Person = ({ person }) => {
   const { name, age, married, gender, partner } = person;
   let partnerLine = null;
 
   if (married) {
-    const partnerLabel = gender === 'male' ? 'wife' : 'husband';
+    const partnerLabel =
+      gender === 'male'
+        ? 'wife'
+        : 'husband';
 
     partnerLine = `${partnerLabel}: ${partner}`;
   } else {
